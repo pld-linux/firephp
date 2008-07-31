@@ -9,7 +9,7 @@
 Summary:	Firefox Extension for FirePHP
 Name:		firephp
 Version:	0.1.0
-Release:	0.1
+Release:	0.2
 License:	New BSD License
 Group:		Development/Languages/PHP
 URL:		https://addons.mozilla.org/en-US/firefox/addon/6149
@@ -19,7 +19,9 @@ Source0:	http://www.firephp.org/DownloadRelease/FirePHP-FirefoxExtension-%{versi
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		extensiondir	%{_datadir}/mozilla-firefox/extensions/firephp
+# extension id from install.rdf
+%define		extensionid		FirePHPExtension-Build@firephp.org
+%define		extensiondir	%{_datadir}/mozilla-firefox/extensions/%{extensionid}
 
 %description
 FirePHP enables you to print to your Firebug Console using a simple
