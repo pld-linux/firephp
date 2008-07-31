@@ -9,13 +9,14 @@
 Summary:	Firefox Extension for FirePHP
 Name:		firephp
 Version:	0.1.0
-Release:	0.2
+Release:	0.3
 License:	New BSD License
 Group:		Development/Languages/PHP
 URL:		https://addons.mozilla.org/en-US/firefox/addon/6149
 BuildRequires:	sed >= 4.0
 Source0:	http://www.firephp.org/DownloadRelease/FirePHP-FirefoxExtension-%{version}
 # Source0-md5:	7546aedfb63f1fa5213fb99629cc5077
+Requires:	firebug
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
